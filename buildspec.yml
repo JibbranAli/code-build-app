@@ -1,0 +1,16 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - echo "Installing dependency "
+  build:
+    commands:
+      - echo "Runninng APP "
+      - python3 app.py
+  post_build:
+    commands:
+      - echo "Build successfullll ....."
+
+artifacts:
+  files:
+    - '**/*'
